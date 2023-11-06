@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;300;400;500;600&display=swap');
+/* navigation bar */
+.header {
+   background-color:#021C36;
+   width: 100%;
+   height:100%;
+   height: 90px;;
+   overflow: hidden; /* hide overflowing links */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color:#021C36 ;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.header .logo {
+   font-size: 30px;
+   font-weight: bold;
+   color: white;
+}
+
+nav {
+   text-align: center;
+ }
+ 
+ .logo img,.logo img {
+   float: left;
+ }
+ 
+ .logo img{
+   height:90px;
+   width:130px;
+ }
+ 
+ .logo {
+   margin-right: 50px;
+ }
+ 
+ .logo nav {
+   text-align: center;
+ }
+ 
+ nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: inline-block;
+   font-size:16px;
+ }
+ 
+ nav ul li {
+   float: left;
+   border-bottom: 3px solid transparent; /* use borders at the bottom to indicate hover state */
+   margin-right: 10px;
+ }
+ 
+ nav ul li:hover {
+   border-bottom: 3px solid white; /* highlight the link we are going to */
+ }
+ 
+ nav ul li a {
+   display: block;
+   padding: 10px 20px;
+   color:white ;
+   text-decoration: none;
+ }
+
+ /* Check out form */
+ *{
+   font-family:'poppins; sans-serif';
+   margin:0; 
+   padding:0;
+   box-sizing: border-box;
+   outline:none;
+   border:none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+ }
+
+ .container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px;
+   min-height: 100vh;
+   background: #324455;
+   padding-bottom: 70px;
+ }
+ .container form{
+   padding:20px;
+   width:700px;
+   background: white;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+ }
+ .container form .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+ }
+.container form .row .column{
+   flex:1 1 250px;
+}
+.container form .row .column .title{
+   font-size: 20px;
+   color:#333;
+   padding-bottom: 5px;
+   text-transform: uppercase;
+}
+.container form .row .column .inputBox{
+   margin:15px 0;
+}
+.container form .row .column .inputBox span{
+   margin-bottom:15px;
+   display: block;
+}
+.container form .row .column .inputBox input{
+   width:100%;
+   border:1px solid #ccc;
+   padding:10px 15px;
+   font-size:15px;
+   text-transform: none;
+}
+.container form .row .column .inputBox input:focus{
+   border:1px solid #000;
+}
+.container form .row .column .flex{
+   display:flex; 
+}
+.container form .row .column .flex .inputBox{
+   margin-top: 5px;
+}
+.container form .row .column .inputBox img{
+   height: 34px;
+   margin-top: 5px;
+   filter: drop-shadow(0 0 1px #000);
+}
+.container form .submit-btn{
+   width:100%;
+   padding:12px;
+   font-size: 17px;
+   background: #808080 ;
+   color: white;
+   margin-top: 5px;
+   cursor: pointer;
+}
+.container form .submit-btn:hover{
+   background: #333;
+}
+/* Thank you receit using popup  */
+.popup {
+   background-color: #fff;
+   width: 400px;
+   background: #fff;
+   border-radius: 6px;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.1);
+   text-align: center;
+   padding:0 30px 30px;
+   color:#333 ;
+   visibility:hidden;
+   transition: transform 0.4s, top 0.4s;
+ }
+.open-popup{
+   visibility: visible;
+   top: 50%;
+   transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+ .popup img{
+   width:100px;
+   margin-top:-50;
+   border-radius: 50px;
+   box-shadow:0 2px 5px rgba(0,0,0.2);
+ }
+ .popup h2{
+   font-size:38px;
+   font-weight: 500;
+   margin: 30px 0 10px;
+ }
+ .popup button{
+   width: 100%;
+   margin-top: 50px;
+   padding: 10px 0;
+   background: #6fd649;
+   color: white;
+   border:0;
+   outline:none;
+   font-size: 18px;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow:0 5px 5px rgba(0,0,0.2);
+ }
+ 

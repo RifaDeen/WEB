@@ -1,0 +1,108 @@
+body { 
+    background-color: #324455;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   }
+
+.head{
+    width: 700px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color:  #E0C389;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.head h2{
+    padding-left: 224px;
+}
+
+/*  the form  */
+form {
+    width: 700px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color:#E0C389;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* error message */
+#error-message{
+    width: 660px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px auto;
+    background-color:rgba(85, 10, 10, 0.986);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* radio button labels*/
+form input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+/* text box */
+form input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+/* text area */
+form textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+/* select menu */
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+/* submit and reset buttons */
+.action button{
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-left:275px;
+    background-color: #021C36;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.action button:hover {
+    background-color: beige;
+    color: #021C36;
+}
+
+#thankyou-section{
+    width: 97%;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #E0C389;
+    text-align: center;
+}
+

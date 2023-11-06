@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="commonstyles.css">  
+</head>
+<body>
+    <header>
+      <div class="logoh">
+        <img src="img/logo.png" alt="Your Logo">
+      </div>
+      <nav>
+          <ul>
+            <li><a href="../../../Student2/20220701_WEB_CW/HomePage.html">Home</a></li>
+            <li><a href="../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+            <li><a href="../../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html">Shop</a></li>
+            <li><a href="../../../Student3/w1957397/quiz/quiz.html" class="active">Quiz</a></li>
+            <li><a href="../../../Student4/sitemap.html">Sitemap</a></li>
+            <li><a href="../../../Student4/gallery.html">Gallery</a></li>
+            <li><a href="../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+          </ul>
+      </nav>     
+    </header>
+    <div class="home-box custom-box ">
+        <h2>Volleyball - Quiz</h2>
+        <br>
+        <h3>Instructions:</h3>
+            <p>01.Total number of questions:<span class="totalQuestion">10</span></p>
+            <p>02.Once you select your answer,it can't be undone</p>
+            <p>03.You cannot exit from the quiz While you are playing.</p>
+            <p>04.You have to complete the quiz within 1 minute</p>
+            <br>
+        <button type="button" class="btn" onclick="startQuiz()" > Start Quiz</button>
+            <br>
+            <br>
+	  </div>
+        
+	<div class="quiz custom-box hide">
+    <div id="timer">
+      <h6>Time Left</h6>
+      <h6 id="time">10.00</h6>
+    </div>
+		<div class="queNumber"></div>
+		<div class="questionText"> </div>
+		<div class="options"></div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-indicator"></div>
+    </div> 
+    <div class="results custom-box hide">
+        <h2 >Quiz Result</h2>
+        <table>
+            <tr>
+                <td>Total Question</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="attempts"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="correctCount"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="wrongCount"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td><span class="finalScore"></span></td>
+            </tr>
+            <tr>
+                <td>Total time taken</td>
+                <td><span class="total-time"></span></td>
+            </tr>
+        </table>
+        <span class="feedBack"></span>
+        <button type="button" class="btn" onclick="tryAgain()">Try Again</button>    
+    </div>
+    <footer>
+        <div class="logof">
+			     <img src="img/logo.png" alt="Your Logo">
+        </div>   
+          
+        <div class="container">
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <br>
+            <ul>
+              <li><a href="../../../Student2/20220701_WEB_CW/HomePage.html"></a>Home</a></li>
+              <li><a href="../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+              <li><a href="../../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html">Shop</a></li>
+              <li><a href="../../../Student3/w1957397/quiz/quiz.html" class="active">Quiz</a></li>
+              <li><a href="../../../Student4/sitemap.html">Sitemap</a></li>
+              <li><a href="../../../Student4/gallery.html">Gallery</a></li>
+              <li><a href="../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="other-sites">
+            <h3>Sports Charity Projects</h3>
+            <br>
+            <ul>
+              <li><a href="http://www.volleyballforcharity.org/">Volleyball for charity</a></li>
+              <li><a href="https://www.usavfoundation.org">USA Volleyball Foundation</a></li>
+              <li><a href=" https://www.volleyballenglandfoundation.org/">England Volleyball Foundation</a> </li>
+              
+            </ul>
+          </div>
+          <div class="other-sites">
+            <h3>Other Sites</h3>
+            <br>
+            <ul>
+              <li><a href="https://www.fivb.com/en">FIVB</a></li>
+              <li><a href="https://en.volleyballworld.com/">The Official Volleyball World Website</a></li>
+              <li><a href=" https://usavolleyball.org/">USA Volleyball Organization</a> </li>
+              <li><a href="https://www.worldparavolley.org/">Para-Volleyball Organization</a></li>
+              <li><a href=" https://asianvolleyball.net/new/" >Asian-Volleyball Organization</a></li>
+            </ul>
+          </div>
+         
+        </div>
+        <br>
+        <br>
+        <hr>
+        <p>&copy; 2023 Court Culture. All Rights Reserved.</p>
+        <div class="page-editor">
+          <a href="../PageEditor.html">Page-Developer</a>
+        </div>
+    </footer>
+    
+    <!--java script-->
+    <script src="script.js"></script>
+    <!--script that contains the question-->
+    <script src="questions.js"></script>  
+</body>
+</html>

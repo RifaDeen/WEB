@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: #B2BEB5;
+}
+
+.pages1 {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.pages1 span {
+
+    display: block;
+}
+
+.Name1 {
+    text-transform: uppercase;
+    color: #000;
+    background: #FFF;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: Lucida Handwriting;
+    animation: text 3s 1;
+
+}
+
+.Phrase1 {
+    text-transform: lowercase;
+    font-size: 30px;
+    font-family: Lucida Handwriting;
+    color: #000000;
+    background-color: #e3e3a1;
+    margin-bottom: 20px;
+
+
+}
+
+.Names {
+    font-size: 20px;
+    color: #FFF;
+    font-family: Lucida Handwriting;
+    margin-bottom: 2px;
+    text-align: center;
+    animation: Names 4s;
+}
+
+
+@keyframes Names {
+    0% {
+        color: #000;
+
+    }
+
+    85% {
+        color: #ffd106;
+    }
+
+
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}

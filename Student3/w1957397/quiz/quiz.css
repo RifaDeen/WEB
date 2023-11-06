@@ -1,0 +1,361 @@
+body{
+    margin:0;
+    font-size:18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:400;
+
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    outline:none;
+
+}
+.custom-box{
+    max-width:750px;
+    background-color:white;
+    margin:40px auto;
+    padding:30px;
+    border-radius:30px 10px;
+    animation:fadeInRight 1s ease;
+   
+}
+@keyframes fadeInRight {
+    0%{
+        transform:translateX(40px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+    
+}
+.custom-box::before,
+.custom-box::after{
+    content:'';
+    display:table;
+    clear:both;
+    
+
+}
+.custom-box.hide{
+    display:none;
+}
+.home-box h2{
+    color:white;
+    font-weight:800px;
+    text-shadow: #cccccc;
+    
+}
+
+.home-box h3{
+	font-size: 18px;
+	margin-bottom:15px;
+	color:#fffcfc;
+	font-weight:900;
+    Line-height:22px;
+}
+.home-box h2{
+    text-align: center;
+}
+
+.home-box.btn{
+	margin-top:20px;
+}
+.home-box {
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-box p span{
+    font-weight:500;
+   
+}
+
+.home-box p {
+	font-size:17px;
+    margin-bottom:10px;
+    Line-height:22px;
+    color:white;
+    font-weight:800;
+}
+    
+.btn{
+	padding:15px 45px;
+    border-radius:5px;
+    border:none;
+    font-family:'Montserrat',sans-serif;
+	background-color:#4e98dc;
+	color:#ffffff;
+    font-weight:700px;
+    cursor:pointer;
+    display:inline-block;
+	font-size: 16px;	
+}
+.quiz.queNumber,
+.quiz.questionText,
+.quiz.next-question-btn,
+.quiz.option-indicator
+.quiz.options{
+    width:100%;
+    float: left;
+}
+
+.quiz .queNumber{
+    font-size:18px;
+    color:white;
+    font-weight:600;
+    border-bottom:1px solid #cccccc;
+    padding-bottom:10px;
+    Line-height:25px;
+
+}
+.quiz .questionText{
+    font-size:22px;
+    color:white;
+    Line-height:28px;
+    font-weight:700;
+    padding:20px 0;
+    margin:0;
+
+}
+.quiz .questionText img{
+    width:500px;
+    height:280px;
+    display:block;
+    margin-top:15px;
+    image-resolution:center;
+    border-radius: 5px;
+    display: flex;
+}
+.quiz{
+    background-color: #2e577e;
+}
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.quiz .options .option{
+    padding:13px 15px;
+    font-size:18px;
+    Line-height:22px;
+    color:#000000;
+    border: 2px thick #ccc;
+    background-color: rgb(240, 241, 251);
+    margin-bottom:10px;
+    cursor:pointer;
+    text-transform:capitalize;
+    opacity:0;
+    animation:fadeIn 0.8s ease forwards;
+    position:relative;
+    overflow:hidden;
+}
+.quiz .btn{
+    margin:15px 0;
+}
+.quiz .answers-indicator{
+    border-top:1px solid #cccccc;
+}
+.quiz .answers-indicator div{
+    height:40px;
+    width:40px;
+    display:inline-block;
+    background-color:#e7e2e2;
+    border-radius:50%;
+    margin-right:3px;
+    margin-top:15px;
+
+}
+.results{
+    text-align:center;
+    background-color: #13324f;
+    font-family:cursive;
+}
+.results h2{
+    font-size:36px;
+    Line-height:42px;
+    color:#ffffff;
+}
+
+.results.hid{
+    display:none;
+}
+
+.results table{
+    width:100%;
+    border-collapse:collapse;
+    margin:30px 0;
+    background-color: rgb(6, 110, 145);
+    border-style:solid rgb(214, 213, 213);
+    
+    
+}
+.results table tr:hover{
+    background-color: silver;
+    
+}
+.results table td{
+    border:1px solid #c0c2be;
+    padding:8px 15px;
+    font-weight:600;
+    color:#ffffff;
+    width:50%;
+    text-align:center;
+    font-size:18px;
+}
+.results.btn{
+    margin-right:20px;
+}
+.quiz .options .option.correct{
+    color:#ffffff;
+}
+
+.quiz .options .option.correct::before{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    background-color:green;
+}
+.quiz .options .option.wrong::before{
+    content: '';
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    background-color:red;
+}
+.quiz .options .option.wrong{
+    color:#ffffff
+}
+.quiz .answers-indicator div.correct{
+    background-image:url('img/checked.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:rgb(5, 138, 5);
+}
+.quiz .answers-indicator div.wrong{
+    background-color:red;
+    background-image:url('img/wrong.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:center;  
+}
+.quiz .options .option.already-choosed{
+    pointer-events:none;
+}
+@media(max-width: 767px){
+    .results .btn{
+        margin-bottom: 15px;
+    
+    }body{
+        padding:15px;
+    }
+}
+#timer{
+    position:absolute;
+    height:40px;
+    width:180px;
+    background-color:#2984d8;
+    color:#e7f1fa;
+    border:1px solid #b0c4d8;
+    font-size:25px;
+    border-radius:10px;
+    top: 20%;
+    left:60%;
+    margin:0 20px;
+    place-items:center;
+    display:grid;
+    animation: none;
+}
+@media only screen and (max-width:767px){
+    .custom-box{
+    border-radius:0;
+    margin:0;
+    max-width:100%;
+    padding:20px;
+    }
+    .quiz .options .option{
+    font-size:16px;
+    Line-height:20px;
+    }
+    .quiz .queNumber{
+    font-size:16px;
+    Line-height:20px;
+    }
+    .quiz .questionText{
+    font-size:20px;
+    Line-height:24px;
+    }
+    .quiz .questionText img{
+    width:100%;
+    height:auto;
+    margin-top:10px;
+    }
+    .btn{
+    font-size:14px;
+    padding:12px 25px;
+    }
+    }
+    @media only screen and (min-width:768px) and (max-width:991px){
+    .custom-box{
+    max-width:100%;
+    }
+    }
+footer p{
+    text-align: center;
+}
+
+/*making the navigation responsive*/ 
+@media (max-width: 767px) {
+    header {
+      height: auto; 
+      padding: 10px; 
+    }
+    
+    .logoh img {
+      height: 40px;
+      width: auto; 
+    }
+    
+    .logoh {
+      margin-right: 20px; 
+    }
+    
+    nav ul {
+      font-size: 14px;
+    }
+    
+    nav ul li {
+      margin-right: 5px;
+    }
+    
+    nav ul li a {
+      padding: 5px 10px; 
+    }
+  }
+  
+  /*making the footer repsonsive*/
+  /* Tablets and small desktops */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logof img {
+      margin-right: 50px;
+    }
+  
+    .logof img {
+      height: 240px;
+      width: 268px;
+    }
+  }

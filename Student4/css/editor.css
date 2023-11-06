@@ -1,0 +1,150 @@
+dt{
+    font-size:30px;
+  padding-top: 10%;
+
+
+  padding-bottom: 20px;
+}
+.dt{
+  color: white;
+}
+dd{
+    font-size: 20px;
+    color: #E0C389;
+}
+  
+header {
+    background-color:#e3e5e8;
+    width: 100%;
+    height:100%;
+    height: 90px;;
+    overflow: hidden; /* hide overflowing links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+    body{
+    margin:0;
+   
+  
+    }
+    h1{
+    text-transform: capitalize;
+    text-align:center;
+    }
+    li{
+    list-style:none;
+    display:block;
+    text-decoration:none;
+    float:left;
+    padding:20px;
+    text-align:center;
+    }
+    
+   
+    #editor{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-variant: small-caps;
+  
+    }
+    #pageedit{
+        
+        text-align: center;
+        color: red;
+        font-size: large;
+        margin: 20px;
+    }
+    p{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    #id1,#id2,#id3,#id4,#id5{
+        text-align: center;
+        
+    }
+    a{
+        color: black;
+    }
+    
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    font-size:16px;
+  }
+  
+  nav ul li {
+    float: left;
+    border-bottom: 3px solid transparent; /* use borders at the bottom to indicate hover state */
+    margin-right: 10px;
+  }
+  
+  
+
+
+
+  a {
+    color:black ;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+  }
+  ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+li :hover{
+  color:rebeccapurple;
+
+}
+li {
+  margin-bottom: 10px;
+  color:white ;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.page-editor {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color:#E0C389 ;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  .page-editor a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .page-editor a:hover{
+    color:#021C36;
+  }
+  
+  
+.page-top {
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  background-color:aquamarine ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.page-top a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-top a:hover{
+  color:#021C36;
+}
+  

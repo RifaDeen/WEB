@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Now </title>
+
+  <!-- Add link to the CSS file -->
+  <link rel="stylesheet" href="AddToCart.css">
+</head>
+
+<body>
+
+  <!-- Add a header with logo and cart -->
+  <header class="header">
+    <h1 class="logo">
+      <img src="logo.png" alt="Your Logo">
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="../../../Student2/20220701_WEB_CW/HomePage.html">Home</a></li>
+        <li><a href="../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+        <li><a href="../../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html" class="active">Shop</a></li>
+        <li><a href="../../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../../Student4/sitemap.html">Sitemap</a></li>
+        <li><a href="../../../Student4/gallery.html">Gallery</a></li>
+        <li><a href="../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <div id="count">
+        <span class="cart-count">0</span>
+      </div>
+      <img src="cart_icons.png" alt="Your Logo">
+      <!-- Add link to the CSS file -->
+    </div>
+  </header>
+
+  <!-- Add main content area -->
+  <main class="container">
+
+    <!-- Add product list to the root element -->
+    <div id="root"></div>
+
+    <!-- Add sidebar with cart details -->
+    <aside class="sidebar">
+      <h2 class="sidebar-heading">My Cart</h2>
+      <div id="cartItem" class="cart-item">Your cart is empty</div>
+      <footer class="sidebar-footer">
+        <h3 class="sidebar-total-heading">Total</h3>
+        <span class="sidebar-total" id="total">$ 0.00</span>
+        <div class="orders">
+         
+           <input type="submit"  onClick="redir_function()" id="button" value="Checkout box">  
+           <!--used a function since a tag isnt used after button tags -->
+        
+          <br>
+          <br>
+          <hr class="page-editor">
+        </div>
+      </footer>
+    </aside>
+  </main>
+  <!-- Add script for the AddToCart functionality -->
+  <script src="AddToCart.js" defer></script>
+  <footer>
+    <div class="logof">
+      <img src="logo.png" alt="Your Logo">
+    </div>
+    <div class="container">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../../../Student2/20220701_WEB_CW/HomePage.html">Home</a></li>
+          <li><a href="../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+          <li><a href="../../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html" class="active">Shop</a></li>
+          <li><a href="../../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+          <li><a href="../../../Student4/sitemap.html">Sitemap</a></li>
+          <li><a href="../../../Student4/gallery.html">Gallery</a></li>
+          <li><a href="../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="other-sites">
+        <h3>Sports Charity Projects</h3>
+        <ul>
+          <li><a href="http://www.volleyballforcharity.org/">Volleyball for charity</a></li>
+          <li><a href="https://www.usavfoundation.org">USA Volleyball Foundation</a></li>
+          <li><a href=" https://www.volleyballenglandfoundation.org/">England Volleyball Foundation</a> </li>
+
+        </ul>
+      </div>
+      <div class="other-sites">
+        <h3>Other Sites</h3>
+        <ul>
+          <li><a href="https://www.fivb.com/en">FIVB</a></li>
+          <li><a href="https://en.volleyballworld.com/">The Official Volleyball World Website</a></li>
+          <li><a href=" https://usavolleyball.org/">USA Volleyball Organization</a> </li>
+          <li><a href="https://www.worldparavolley.org/">Para-Volleyball Organization</a></li>
+          <li><a href=" https://asianvolleyball.net/new/">Asian-Volleyball Organization</a></li>
+        </ul>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+    <p>&copy; 2023 Court Culture. All Rights Reserved.</p>
+    <div class="page-editor">
+      <a href="PageEditor/pageEditor.html">Page
+        Editor</a>
+    </div>
+
+  </footer>
+
+ 
+</body>
+
+</html>

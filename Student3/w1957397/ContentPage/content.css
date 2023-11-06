@@ -1,0 +1,250 @@
+.nav2{
+  background-color: rgba(11, 6, 36, 0.5);
+   position: absolute;
+   top:90px;
+   left: 0;
+   z-index: 999;
+   width: 75%;
+   margin-left: 12%;
+}
+.dropdown-menu {
+  display: none;
+}
+/* Show dropdown menu when list is hovered or focused */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+  display:flex;
+}
+.nav2 ul li:hover {
+  border-bottom: 2px solid white; /* highlight the link we are going to */
+  box-shadow: inset 0px 2px 4px rgba(36, 15, 49, 0.1);
+  padding-top: 3px;
+}
+.topic img{
+    width:100%;
+    height:20%;
+    opacity:80%;
+}
+.overlay{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+.container {
+    position: relative;
+    text-align: center;
+}
+ body {
+    margin: 0;
+    padding: 0;
+  }
+  .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12 {
+    
+    max-width: 280px;
+    height:auto;
+    margin: auto;
+    text-align: left;
+    perspective: 1000px;
+    font-family: arial; 
+    padding: 20px;
+    margin: 20px;
+
+  }
+  
+  .title {
+    color: rgb(22, 5, 5);
+    font-size: 18px;
+  }
+  .name{
+    font-size: 26px;
+    font-weight: bolder;
+    
+  }
+  .name,h1{
+    text-align: center;
+  
+  }
+
+  .details{
+    font-size:15px;
+  }
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+  border: 10px solid #ccc;
+  border-radius: 35px;
+  transition: transform 0.3s ease;
+}
+
+
+.card1 img,.card2 img,.card3 img,.card4 img,.card5 img,.card6 img,.card7 img,.card8 img,.card9 img,.card10 img,.card11 img,.card12 img{
+  height:215px;
+}
+ 
+.card1:hover,.card2:hover,.card3:hover,.card4:hover,.card5:hover,.card6:hover,.card7:hover,.card8:hover,.card9:hover,.card10:hover,.card11:hover,.card12:hover {
+  transform: scale(1.05);
+}
+
+.subHeading{
+  color:white;
+  padding-left: 25px;
+  font-size:28px;
+  font-weight:bolder;
+  
+  
+
+}
+h2{
+  text-align: center;
+}
+
+.details p,.title{
+  color: silver;
+  font-size:18px;
+}
+.row1Players,.row2Players,.allTimeFamous {
+  display: flex;
+  
+}
+
+.table,.table2{
+  height:95%;
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+  font-weight: 400;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-bottom:1px;
+  
+
+
+}
+td img{
+  width:69px;
+  height:69px;
+  margin-right:.5rem;
+  border-radius:100%;
+  vertical-align:middle;
+  
+}
+table,th,td{
+  padding:1rem;
+  border-collapse: collapse;
+ 
+}
+table h2{
+  color:#000000;
+}
+
+table2 th,td{
+  padding:1rem;
+  border-collapse: collapse;
+}
+
+table th{
+  padding:22px;
+}
+
+.table-box,.table-box2{
+  width:41.8vw;
+  height:92vh;
+  background-color: rgba(120, 119, 119, 0.333);
+  backdrop-filter:blur(8px);
+  border-radius:.9rem;
+  box-sizing: 0 .4rem .8rem #0005;
+  padding-top: 0px;
+
+  
+}
+.table_header,.table_header2{
+  margin-top:0px ;
+  width:94.8%;
+  border-radius: .9rem;
+  height:8%;
+  background-color:rgb(230, 228, 228);
+  padding:.2rem 1rem;
+}
+
+.table_header h1,.table_header2 h1{
+  font-weight:75px;
+
+}
+
+.table_body,.table_body2{
+  padding-top:0%;
+  height:80%;
+  width:91%;
+  max-height:calc(89% .8rem);
+  background-color: rgba(255, 255, 255, 0.333);
+  margin:.8rem auto;
+  border-radius:.6rem;
+  overflow:auto;
+  margin-bottom: 5px;
+}
+thead tr {
+  position:sticky;
+  top:0;
+  left: 0px;
+  width:100%;
+  background-color:#d5d1defe;
+}
+table thead {
+background-color:#d5d1defe;
+}
+
+
+.tables {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+.table2{
+  padding: 65px;
+  height:40px;
+  width:750px;
+
+}
+.table{
+    padding: 65px;
+    height:40px;
+    width:750px;
+  
+
+}
+.table{
+  padding:25px;
+  padding-left: 34px;;
+}
+
+.table2 th{
+  padding:25px;
+  padding-left: 34px;;
+}
+
+
+.name{
+  background-color: #ccc;
+}
+
+#legend h1,.cards h1,#ranks h1{
+  background-color: #ccc;
+  font-size: 42px;
+}
+.rank-tables{
+  background-color: #ccc;
+
+
+}

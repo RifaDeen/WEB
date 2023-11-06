@@ -1,0 +1,45 @@
+.top-layer{
+    font-weight:800px;
+    font-size:28px;
+    text-align: center;
+    background-color: pink;
+}
+
+hr{
+    margin-top: 16px;
+    
+}
+.intro{
+    text-align: center;
+    font-size:20px;
+    font-weight:700px;
+
+}
+.intro{
+    background-color: white;
+
+}
+.work-load{
+    background-color: pink;
+    margin-left:none;
+    left:0;
+    top:0;
+    bottom:0;
+    height:100%;
+}
+.quiz,.student_details,.extra_content,.main{
+    text-align:center;
+    font-size:22px;
+    
+
+}*{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.anchor{
+    text-align: center;
+}
+body{
+    background-color: pink;
+}

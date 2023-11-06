@@ -1,0 +1,148 @@
+header {
+  background-color:#021C36;
+  width: 100%;
+  height:100%;
+  height: 90px;;
+  overflow: hidden; /* hide overflowing links */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  text-align: center;
+}
+
+.logoh img,.logof img {
+  float: left;
+}
+
+.logoh img{
+  height:110px;
+  width:130px;
+}
+
+.logoh {
+  margin-right: 50px;
+}
+
+.logoh nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  font-size:16px;
+}
+
+nav ul li {
+  float: left;
+  border-bottom: 3px solid transparent; /* use borders at the bottom to indicate hover state */
+  margin-right: 10px;
+}
+
+nav ul li:hover {
+  border-bottom: 3px solid white; /* highlight the link we are going to */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color:white ;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid white; /* use borders at the bottom to indicate active state */
+}
+
+body {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #324455;
+  color: #021C36;
+}
+
+.logof img {
+  margin-right: 75px;
+}
+
+.logof img{
+  height: 280px;;
+  width:308px;
+  margin: 0;
+  padding:0;
+}
+
+footer {
+  background-color:#021C36;
+  padding: 40px;
+  font-size:16px;
+  font-family: "Times New Roman", Times, serif;
+  color:white ;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color:white ;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  color:white ;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p{
+  text-align:center;
+}
+
+
+.page-editor {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  background-color:#E0C389 ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.page-editor a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-editor a:hover{
+  color:#021C36;
+}
+
+
+
+

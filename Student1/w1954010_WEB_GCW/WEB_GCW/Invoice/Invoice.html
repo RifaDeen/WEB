@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Now </title>
+
+    <!-- Add link to the CSS file -->
+    <link rel="stylesheet" href="AddToCart.css">
+    <link rel="stylesheet" href="Invoice.css">
+    <script src="Invoice.js"></script>
+
+    <!-- <style>
+            body,
+            html {
+                background-color: #98bada;
+            }
+        </style> -->
+
+
+</head>
+
+<body>
+
+    <!-- Add a header with logo and cart -->
+    <header class="header">
+        <h1 class="logo">
+            <img src="logo.png" alt="Your Logo">
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="../../../../Student2/20220701_WEB_CW/HomePage.html">Home</a></li>
+                <li><a href="../../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+                <li><a href="../../../../Student1/w1954010_WEB_GCW/WEB_GCW/Invoice/Invoice.html" class="active">Shop</a></li>
+                <li><a href="../../../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+                <li><a href="../../../../Student4/sitemap.html">Sitemap</a></li>
+                <li><a href="../../../../Student4/gallery.html">Gallery</a></li>
+                <li><a href="../../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="myForm" action="...">
+            <div class="row">
+                <div class="column">
+
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="street- locality" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>city:</span>
+                        <input type="text" placeholder="city" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Country:</span>
+                            <input type="text" placeholder="country" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Postal code:</span>
+                            <input type="text" placeholder="123 345" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+
+                    <h3 class="title">Payement Method</h3>
+
+                    <div class="inputBox">
+                        <span>card accepted:</span>
+                        <img src="../Invoice/cards.png" alt="">
+
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Name on card:</span>
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Credit card number:</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Exp Month :</span>
+                        <input type="text" placeholder="january" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp year :</span>
+                            <input type="number" placeholder="2023" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <input type="submit" value="proceed to checkout" class="submit-btn"> -->
+            <button type="submit" value="proceed to checkout" class="submit-btn"
+                onclick="validateForm(); return false;">Proceed to
+                checkout</button>
+            <div class="popup" id="popup">
+                <img src="../Invoice/correct.png" alt="correct">
+                <h2>Thank you for your order!</h2>
+                <p>Your order has been successfully placed.</p>
+                <button type="button" id="myButton" onclick="closePopup()">OK</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const popup = document.getElementById('popup');
+
+        function openPopup() {
+            popup.classList.add('open-popup');
+        }
+
+        function closePopup() {
+            popup.classList.remove('open-popup');
+        }
+
+        function validateForm() {
+            if (form.checkValidity()) {
+                openPopup();
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        }
+
+        document.getElementById('myButton').onclick = function () {
+            location.href = '../Stu_1.html';
+        };
+    </script>
+
+
+</body>
+
+</html>

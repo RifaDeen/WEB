@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Form</title>
+    <link rel="stylesheet" href="./20220701_CSS/commentstyles.css">
+    <link rel="stylesheet" href="./20220701_CSS/commonstyles.css">
+      
+</head>
+
+<body>	
+
+  <header>   
+    <div class="logoh">
+      <img src="./20220701_IMAGES/logo.png" alt="Your Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="CommentsPage.html" class="active">Comments</a></li>
+        <li><a href="../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html">Shop</a></li>
+        <li><a href="../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../Student4/sitemap.html">Sitemap</a></li>
+        <li><a href="../../Student4/gallery.html">Gallery</a></li>
+        <li><a href="../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+      </ul>
+    </nav>
+      
+  </header>
+
+ <div id="mypage">
+    <!--COMMENTS HEADER-->
+    <div class="head">
+      <h2>COMMENTS FORM</h2>
+      <p> Please be kind enough to take a few minutes to fill out this form and leave us a feedback so we can improve our website for the next time.Your feedback is highly appreciated.</p>
+    </div>
+    <!--FORM-->
+    <form action="mailto:riha.20220701@iit.ac.lk" method="post" enctype="text/plain" id="myform" >
+      <!--NAME AND EMAIL FIELDS-->
+      <div class="item">
+          <label for="name" id="nameLabel">1.Name: </label><br>
+          <input name="Name" type="text" id="name" placeholder="Enter your full name..." required>
+      </div>
+      <div class="item">
+          <label for="email">2.E-Mail: </label><br>
+          <input name="E-mail" type="text" id="email" placeholder="user1234@gmail.com" required>
+      </div>
+      <!--RADIO BUTTONS-->
+      <div id="radios">
+          3.How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely dissatisfied and 10 is extremely satisfied.
+          <br><br>
+  
+      <input type="radio" name="satisfaction" id="0" value="0">
+      <label for="0">0  </label>
+      <input type="radio" name="satisfaction" id="1" value="1">
+      <label for="1">1</label>
+      <input type="radio" name="satisfaction" id="2" value="2">
+      <label for="2">2</label> 
+      <input type="radio" name="satisfaction" id="3" value="3">
+      <label for="3">3</label> 
+      <input type="radio" name="satisfaction" id="4" value="4">
+      <label for="4">4</label> 
+      <input type="radio" name="satisfaction" id="5" value="5">
+      <label for="5">5</label> 
+      <input type="radio" name="satisfaction" id="6" value="6">
+      <label for="6">6</label> 
+      <input type="radio" name="satisfaction" id="7" value="7">
+      <label for="7">7</label> 
+      <input type="radio" name="satisfaction" id="8" value="8">
+      <label for="8">8</label> 
+      <input type="radio" name="satisfaction" id="9" value="9">
+      <label for="9">9</label>
+      <input type="radio" name="satisfaction" id="10" value="10">
+      <label for="10">10</label>
+      </div>
+      <!--ERROR MESSAGE TO BE DISPLAYED IF RADIO AND TEXT AREA FIELD IS EMPTY ON SUBMIT-->
+      <div id="error-message" style="display:none"></div>
+      <!--TEXT AREA-->
+      <div id="textarea">
+          <br>
+          <label for="reason">4.Please could you tell us your reasons for giving this rating?</label><br>
+          <textarea id="reason" name="reason" rows="2"></textarea>
+      </div>
+      <!--PREFERRED SELECTION-->
+      <div>
+          <label for="inputmode">5.How did you want to complete this task today? (optional)</label>
+          <br>
+          <select name="completedmodes" id="inputmode">
+              <option value="select">-- Please Select --</option>   
+              <option value="phone">Phone</option>
+              <option value="website">Website</option>
+              <option value="webchat">Webchat</option>
+              <option value="socialmedia">Social Media</option>
+              <option value="email">Email</option>
+          </select>
+      </div>
+      <!--SELECTION FOR FUTUTRE MODE-->
+      <div>
+          <label for="reinputmode">6.If you had to complete this task again, how would you prefer to do it (optional)</label>
+          <br>
+          <select name="repeatmodes" id="reinputmode">
+              <option value="select">-- Please Select --</option>   
+              <option value="phone">Phone</option>
+              <option value="website">Website</option>
+              <option value="webchat">Webchat</option>
+              <option value="socialmedia">Social Media</option>
+              <option value="email">Email</option>
+          </select> 
+      </div>
+      <!--SUBMIT AND RESET BUTTONS-->
+      <div class="action">
+          <button type="reset">RESET</button><br>
+          <button id="nextStep">SUBMIT</button>
+      </div> 
+    
+    </form>
+  </div>
+  <!--THANKYOU MESSAGE ON SUCCESSFUL SUBMISSION-->
+  <div id="thankyou-section" style="display: none">
+    <h1>Thank you for submitting the form!</h1>
+    <p>We value your feedback!</p>
+  </div>
+  <!--FOOTER-->
+  <footer>
+      <div class="logof">
+    <img src="./20220701_IMAGES/logo.png" alt="Your Logo">
+          
+  </div>
+  <div class="container">
+    <div class="quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="CommentsPage.html" class="active">Comments</a></li>
+        <li><a href="../../Student1/w1954010_WEB_GCW/WEB_GCW/Invoice/Invoice.html">Shop</a></li>
+        <li><a href="../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../Student4/sitemap.html">Sitemap</a></li>
+        <li><a href="../../Student4/gallery.html">Gallery</a></li>
+        <li><a href="../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+      </ul>
+    </div>
+
+      <div class="other-sites">
+        <h3>Sports Charity Projects</h3>
+        <ul>
+          <li><a href="http://www.volleyballforcharity.org/">Volleyball for charity</a></li>
+          <li><a href="https://www.usavfoundation.org">USA Volleyball Foundation</a></li>
+          <li><a href=" https://www.volleyballenglandfoundation.org/">England Volleyball Foundation</a> </li>
+          
+        </ul>
+      </div>
+      <div class="other-sites">
+        <h3>Other Sites</h3>
+        <ul>
+          <li><a href="https://www.fivb.com/en">FIVB</a></li>
+          <li><a href="https://en.volleyballworld.com/">The Official Volleyball World Website</a></li>
+          <li><a href=" https://usavolleyball.org/">USA Volleyball Organization</a> </li>
+          <li><a href="https://www.worldparavolley.org/">Para-Volleyball Organization</a></li>
+          <li><a href=" https://asianvolleyball.net/new/" >Asian-Volleyball Organization</a></li>
+        </ul>
+      </div>
+      
+  </div>
+    <br><br><hr>
+    <p>&copy; 2023 Court Culture. All Rights Reserved.</p>
+    <div class="page-editor" style="background-color:#E0C389;">
+        <a href="PageEditorR.html">Page Editor</a>
+    </div>
+  </footer>
+
+  <!--JAVASCRIPT FOR FORM-->
+  <script>
+
+  var form = document.getElementById("myform");
+  var errorMessage = document.getElementById("error-message");
+  var thankyouMessage = document.getElementById("thankyou-section");
+
+  form.addEventListener("submit", function(event) {
+  
+    var options = document.getElementsByName("satisfaction");
+    var selected = false;
+
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].checked) {
+        selected = true;
+        break;
+      }
+    }
+
+    var message = document.getElementById("reason").value.trim();
+
+    if (!message && !selected) {
+
+        errorMessage.style.display="block";
+        document.getElementById("radios").style.border = "thick solid red";
+        document.getElementById("textarea").style.border = "thick solid red";
+        errorMessage.innerHTML = "THESE FIELDS ARE REQUIRED!";
+        event.preventDefault();
+
+    } else if (!message) {
+
+        errorMessage.style.display="block";
+        document.getElementById("radios").style.border = "none";
+        document.getElementById("textarea").style.border = "thick solid red";
+        errorMessage.innerHTML = "THIS IS A REQUIRED FIELD";
+        event.preventDefault();
+
+    } else if (!selected) {
+
+        errorMessage.style.display="block";
+        document.getElementById("textarea").style.border = "none";
+        document.getElementById("radios").style.border = "thick solid red";
+        errorMessage.innerHTML = "THIS IS A REQUIRED FIELD";
+        event.preventDefault();
+
+    } else {
+
+        errorMessage.innerHTML = "";
+        thankyouMessage.style.display = "block";
+        mypage.style.display="none";
+
+    }
+  });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+
+body{
+ 
+  background-color:rgb(15, 154, 152) ;
+  
+  font-family: 'Times New Roman', Times, serif
+}
+
+.presentation{
+  position: relative;
+  left: 34%;
+  top: 200px;
+  width: 50%;
+}
+
+h1{
+  text-shadow: 1px 1px 1px rgba(0, 255, 179, 0.377);
+  font-size: 7em;
+  margin-top: 1%;
+  margin-bottom: -100px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 1s steps(25, end) forwards;
+}
+
+
+
+#student1, #student2, #student3, #student4{
+  display: inline-block;
+  color:blue;
+  text-shadow: 1px 1px 1px rgb(12, 3, 78);
+  
+  
+
+}
+
+.uowID{
+  color: blue; 
+  text-shadow: 1px 1px 1px rgb(12, 3, 78);
+}
+
+
+#stu1, #stu2, #stu3, #stu4{
+    position: relative;
+    left: 40px;
+    font-size: 1.5em;
+    overflow: hidden;
+    /* border-right: .15em solid rgb(246, 0, 0); */
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing .5s steps(25, end) forwards;
+
+}
+#stu2{ animation-delay: 1s;}
+#stu3{animation-delay: 2s;}
+#stu4{animation-delay: 3s;}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}

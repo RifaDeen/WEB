@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5; url='../../../Student2/20220701_WEB_CW/HomePage.html'">
+    <!-- 5 time in s for redirect, use the main page url in demo-->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        img {
+            padding: 10px;
+
+        }
+    </style>
+
+
+    <title>PresentationPage</title>
+
+</head>
+
+
+
+<body>
+    <!-- Splash screen -->
+    <div id="splash-screen">
+        <div class="pages1">
+            <span class="Name1">Court Culture</span>
+            <span class="Names">(Presented by Umasha, Riffa, Venuri, Hashir)</span>
+            <img src="dp.jpg" alt="HII" style="float: none;" width="300" height="400">
+        </div>
+        <!--
+        the below nav bar is not required since it redirects to the main page directly.used for testing purposes
+       -->
+    </div>
+    <!-- Main webpage -->
+    <div id="main-webpage" style="display: none;">
+        <!-- your main webpage content goes here -->
+        <h1>Court Culture</h1>
+        <ul>
+            <li><a href="../../../Student2/20220701_WEB_CW/HomePage.html" class="active">Home</a></li>
+            <li><a href="../../../Student2/20220701_WEB_CW/CommentsPage.html">Comments</a></li>
+            <li><a href="../../../Student1/w1954010_WEB_GCW/WEB_GCW/Stu_1.html">Shop</a></li>
+            <li><a href="../../../Student3/w1957397/quiz/quiz.html">Quiz</a></li>
+            <li><a href="../../../Student4/sitemap.html">Sitemap</a></li>
+            <li><a href="../../../Student4/gallery.html">Gallery</a></li>
+            <li><a href="../../../Student3/w1957397/StudentDetails/student_detail.html">About Us</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- JavaScript to display main webpage after 4 seconds -->
+    <script>
+        setTimeout(function () {
+            document.getElementById("splash-screen").style.display = "none";
+            document.getElementById("main-webpage").style.display = "none"; //displaying the contents
+        }, 4000); // 4000 milliseconds = 4 seconds
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.team-intro {
+  padding: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.border {
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #3498db;
+  margin-bottom: 40px;
+  margin-top: -30px;
+}
+body{
+  margin:0;
+  padding:0;
+  background-image: url("images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-intro h6 {
+  text-transform: uppercase;
+  margin-bottom: 44px;
+  color: white;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.team-intro p {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-top: 30px;
+  font-size: 19px;
+  line-height: 1.5;
+  color: aliceblue;
+  padding: bottom -2px;
+  text-shadow: -1px 0 black, 0 1px black, 4px 0 black, 0 -1px black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  max-width: 100%;
+}
+
+.details {
+  background-color: #022c43;
+  height: 650px;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px 03px #18191b;
+  margin-top: 2%;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.profile-card {
+  position: relative;
+  font-family: sans-serif;
+  background: #044467;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+  margin: 0 25px;
+}
+
+@media only screen and (min-width: 768px ) {
+  .profile-card {
+    width: 220px;
+    height: 200px;
+    margin: 0 50px;
+  }
+}
+
+.profile-card:hover {
+  border-radius: 2vw / 2.2vw;
+  width: 13vw;
+  height: 16.5vw;
+  background: white;
+  border-radius:5%;
+}
+
+.profile-card .img {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+}
+
+.profile-card:hover .img {
+  transform: translateY(-65px);
+  border-radius: 10px;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 90%;
+  box-shadow: black;
+  transition: .6s;
+  max-width: 100%;
+  max-width: 100%;
+}
+
+.caption {
+  text-align: center;
+  transform: translateY(-115px);
+  opacity: 0;
+  transition: .6s;
+}
+
+.profile-card:hover .caption {
+  opacity: 1;
+}
+
+.caption h3 {
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.caption p {
+  font-size: 18px;
+  color: #234770;
+  font-family: sans-serif;
+  margin: 2px 0 9
+}
+
+.caption .social-links a{
+  color:rgb(27, 41, 105);
+}
+
+@media only screen and (max-width: 768px) {
+  .team-intro {
+    padding: 20px;
+  }
+  .border {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  .details {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .profile-card {
+    margin: 20px 0;
+    width: 80%;
+    height: 300px;
+  }
+  .profile-card:hover {
+    height: 350px;
+  }
+  .caption {
+    transform: translateY(-70px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team-intro h6 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .team-intro p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .caption h3 {
+    font-size: 16px;
+  }
+  .caption p {
+    font-size: 14px;
+  }
+}
+
+/*making the navigation responsive*/ 
+@media (max-width: 767px) {
+  header {
+    height: auto; 
+    padding: 10px; 
+  }
+  
+  .logoh img {
+    height: 40px;
+    width: auto; 
+  }
+  
+  .logoh {
+    margin-right: 20px; 
+  }
+  
+  nav ul {
+    font-size: 14px;
+  }
+  
+  nav ul li {
+    margin-right: 5px;
+  }
+  
+  nav ul li a {
+    padding: 5px 10px; 
+  }
+}
+
+/*making the footer repsonsive*/
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logof img {
+    margin-right: 50px;
+  }
+
+  .logof img {
+    height: 240px;
+    width: 268px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+  .logof img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .logof img {
+    height: 180px;
+    width: 198px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .page-editor {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .profile-card{
+      flex-direction: column;
+  }
+}
